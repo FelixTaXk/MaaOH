@@ -1,0 +1,1157 @@
+{
+    "$__mpe_config_一键日常": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filename": "一键日常",
+            "prefix": "",
+            "savedViewport": {
+                "x": -94,
+                "y": 20,
+                "zoom": 0.4
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "N07": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1610,
+                "y": 2489
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -6,
+                    27,
+                    10,
+                    31
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "battle"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "N13"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "adventure": {
+        "$__mpe_code": {
+            "position": {
+                "x": 629,
+                "y": 2474
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -34,
+                    -125,
+                    71,
+                    92
+                ]
+            },
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "go"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "冒险"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "again": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2852,
+                "y": 2506
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "used",
+            "checkBattle"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "再次挑战"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "backHome": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3532,
+                "y": 2097
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "template": [
+                    "backHome.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "backHome1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 1688
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "返回"
+                ]
+            },
+            "type": "OCR"
+        },
+        "repeat": 2
+    },
+    "backHome2": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 1095
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "返回"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "backHome3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 733
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "返回"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "backHome4": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3730,
+                "y": 2497
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "返回"
+                ]
+            },
+            "type": "OCR"
+        },
+        "repeat": 2
+    },
+    "base": {
+        "$__mpe_code": {
+            "position": {
+                "x": 635,
+                "y": 1051
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -30,
+                    -127,
+                    63,
+                    97
+                ]
+            },
+            "type": "Click"
+        },
+        "enabled": true,
+        "next": [
+            "claim1"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "基站"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "battery": {
+        "$__mpe_code": {
+            "position": {
+                "x": 655,
+                "y": 364
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "enabled": true,
+        "next": [
+            "battery2"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "电量"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "battery2": {
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 386
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "battery3"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "蓄电池"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "battery3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 403
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "取出电量"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "battle": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1908,
+                "y": 2499
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "startBattle"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "准备战斗"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "challenge": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1253,
+                "y": 2501
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "N07"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "挑战"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "chat": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 2064
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "send"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "help.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "checkBattle": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2567,
+                "y": 2503
+            }
+        },
+        "next": [
+            "again"
+        ],
+        "pre_wait_freezes": {
+            "rate_limit": 5000,
+            "time": 5000,
+            "timeout": 10000000
+        }
+    },
+    "checkIn": {
+        "$__mpe_code": {
+            "position": {
+                "x": 656,
+                "y": 32
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "clickCheckIn",
+            "haveCheckIn"
+        ],
+        "post_delay": 300,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "签到"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "claim": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 2106
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "limit",
+            "help"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "一键领取"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "claim1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 1078
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "collect"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "领取"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "clickCheckIn": {
+        "$__mpe_code": {
+            "position": {
+                "x": 986,
+                "y": -86
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "confirm"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "点击签到"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "close": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 1052
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "backHome2"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "close.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "collect": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 1078
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "confirm3"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "收取物资"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "confirm": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1312,
+                "y": 60
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "确定"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "confirm1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3212,
+                "y": 2106
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "backHome"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "确定"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "confirm2": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 1699
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "backHome1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "确定"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "confirm3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 1063
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "close"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "confirm.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "confirm4": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 699
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "backHome3"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "blueConfirm.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "dimension": {
+        "$__mpe_code": {
+            "position": {
+                "x": 642,
+                "y": 660
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -14,
+                    -126,
+                    23,
+                    95
+                ]
+            },
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "exchange"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "临界次元"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "duel": {
+        "$__mpe_code": {
+            "position": {
+                "x": 629,
+                "y": 1699
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -22,
+                    -123,
+                    47,
+                    91
+                ]
+            },
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "gacha"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "决斗王"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "emoji": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2572,
+                "y": 2080
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "emoji1"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "emoji.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "emoji1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2892,
+                "y": 2106
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "confirm1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "对不起"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "exchange": {
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 716
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "confirm4"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "兑换"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "exit": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3440,
+                "y": 2508
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "backHome4"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "退出"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "free": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1297,
+                "y": 1576
+            }
+        },
+        "next": [
+            "haveGaCha",
+            "gachaOne"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "免费"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "friend": {
+        "$__mpe_code": {
+            "position": {
+                "x": 629,
+                "y": 2057
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -36,
+                    -127,
+                    75,
+                    98
+                ]
+            },
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "friendBattery"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "好友"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "friendBattery": {
+        "$__mpe_code": {
+            "position": {
+                "x": 974,
+                "y": 2051
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "claim"
+        ],
+        "recognition": {
+            "param": {
+                "green_mask": true,
+                "template": [
+                    "friendBattery.png",
+                    "friendBattery2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "gacha": {
+        "$__mpe_code": {
+            "position": {
+                "x": 965,
+                "y": 1731
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -17,
+                    -90,
+                    33,
+                    56
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "free"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "抽卡"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "gacha1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 638,
+                "y": 1362
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -34,
+                    -134,
+                    66,
+                    102
+                ]
+            },
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "free"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "抽卡"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "gachaOne": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1610,
+                "y": 1680
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "confirm2"
+        ],
+        "post_delay": 3000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "抽取1回"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "gameLogin": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 1124
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "gameStart"
+        ],
+        "post_delay": 3000,
+        "recognition": {
+            "param": {
+                "template": [
+                    "game.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "gameStart": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 1145
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkIn",
+            "battery",
+            "friend",
+            "duel",
+            "gacha1",
+            "base",
+            "dimension",
+            "adventure"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "开始游戏"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "go": {
+        "$__mpe_code": {
+            "position": {
+                "x": 971,
+                "y": 2513
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "challenge"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "前往"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "haveCheckIn": {
+        "$__mpe_code": {
+            "position": {
+                "x": 980,
+                "y": 192
+            }
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "已签到"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "haveGaCha": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1586,
+                "y": 1501
+            }
+        },
+        "next": [
+            "backHome1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "今日已抽取"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "help": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1613,
+                "y": 2237
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "chat"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "帮好友充电"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "limit": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1609,
+                "y": 2001
+            }
+        },
+        "next": [
+            "chat"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "已达上限"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "send": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 2080
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "emoji"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "send.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "startBattle": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2214,
+                "y": 2501
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkBattle"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "开始战斗"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "used": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3155,
+                "y": 2501
+            }
+        },
+        "next": [
+            "exit"
+        ],
+        "on_error": [
+            "checkBattle"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "今日次数已用尽"
+                ]
+            },
+            "type": "OCR"
+        }
+    }
+}
