@@ -1,0 +1,107 @@
+{
+    "$__mpe_config_duel": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filename": "duel",
+            "prefix": "",
+            "savedViewport": {
+                "x": 120,
+                "y": -1034,
+                "zoom": 0.99
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_free_duel": {
+        "$__mpe_code": {
+            "position": {
+                "x": 786,
+                "y": 1619
+            }
+        }
+    },
+    "$__mpe_external_start_duel": {
+        "$__mpe_code": {
+            "position": {
+                "x": 441,
+                "y": 1295
+            }
+        }
+    },
+    "duel": {
+        "$__mpe_code": {
+            "position": {
+                "x": 112,
+                "y": 1521
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -22,
+                    -123,
+                    47,
+                    91
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "gacha-duel"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "决斗王"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "gacha-duel": {
+        "$__mpe_code": {
+            "position": {
+                "x": 433,
+                "y": 1556
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -17,
+                    -90,
+                    33,
+                    56
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "free"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "抽卡"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "startDuelTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 106,
+                "y": 1211
+            }
+        },
+        "anchor": {
+            "SpecialNode": "duel"
+        },
+        "next": [
+            "start"
+        ],
+        "post_delay": 2000
+    }
+}

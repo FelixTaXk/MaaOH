@@ -1,138 +1,133 @@
 {
-    "$__mpe_anchor_SpecialNode_generalNode": {
-        "$__mpe_code": {
-            "position": {
-                "x": 972,
-                "y": 852
-            }
-        }
-    },
-    "$__mpe_config_generalNode": {
+    "$__mpe_config_gameStart": {
         "$__mpe_code": {
             "coordinateMode": "absolute-v1",
-            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\generalNode.json",
-            "filename": "generalNode",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\dailyTask.json",
+            "filename": "gameStart",
             "isDeleted": true,
             "isModifiedExternally": false,
-            "lastSyncTime": 1787152626284,
+            "lastSyncTime": 1787154384320,
             "prefix": "",
             "savedViewport": {
-                "x": 222,
-                "y": 162,
-                "zoom": 0.65
+                "x": 200,
+                "y": 29,
+                "zoom": 0.75
             },
             "version": "v1.7.6"
         }
     },
-    "backHome-gacha": {
+    "checkLogin": {
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 224
+                "x": 1292,
+                "y": 362
             }
         },
         "action": {
-            "type": "Click"
-        },
-        "recognition": {
             "param": {
-                "expected": [
-                    "返回"
-                ]
+                "custom_action": "sendLoginMessage"
             },
-            "type": "OCR"
+            "type": "Custom"
         },
-        "repeat": 2
-    },
-    "confirm-gacha": {
-        "$__mpe_code": {
-            "position": {
-                "x": 652,
-                "y": 268
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "backHome-gacha"
-        ],
         "recognition": {
             "param": {
                 "expected": [
-                    "确定"
+                    "选择登录方式"
                 ]
             },
             "type": "OCR"
         }
     },
-    "free": {
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 240
-            }
-        },
-        "next": [
-            "haveGaCha",
-            "gachaOne"
-        ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "免费"
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "gachaOne": {
+    "checkNotice": {
         "$__mpe_code": {
             "position": {
                 "x": 332,
-                "y": 240
+                "y": 359
+            }
+        },
+        "next": [
+            "closeNotice"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "历史公告"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "closeNotice": {
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 330
             }
         },
         "action": {
             "type": "Click"
         },
         "next": [
-            "confirm-gacha"
+            "startGame"
         ],
-        "post_delay": 3000,
+        "post_delay": 20000,
         "recognition": {
             "param": {
                 "expected": [
-                    "抽取1回"
+                    "关闭"
                 ]
             },
             "type": "OCR"
         }
     },
-    "haveGaCha": {
+    "gameLogin": {
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 12
+                "x": 12,
+                "y": 350
             }
         },
+        "action": {
+            "type": "Click"
+        },
         "next": [
-            "backHome-gacha"
+            "checkNotice"
         ],
+        "on_error": [
+            "startGame"
+        ],
+        "post_delay": 15000,
         "recognition": {
             "param": {
                 "expected": [
-                    "今日已抽取"
+                    "百分之一"
+                ]
+            },
+            "type": "OCR"
+        },
+        "timeout": 5000
+    },
+    "isLogin": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 611
+            }
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "系统升级"
                 ]
             },
             "type": "OCR"
         }
     },
-    "leftMove": {
+    "leftMove-start": {
         "$__mpe_code": {
             "position": {
                 "x": 652,
-                "y": 893
+                "y": 610
             }
         },
         "action": {
@@ -155,42 +150,18 @@
             "type": "Swipe"
         },
         "next": [
-            "[Anchor]SpecialNode"
+            "isLogin"
         ],
         "on_error": [
-            "rightMove"
+            "rightMove-start"
         ],
         "post_delay": 2000
     },
-    "returnHome": {
+    "rightMove-start": {
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 566
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "template": [
-                    "backHome.png",
-                    "backHome1.png",
-                    "backHome2.png",
-                    "backHome3.png",
-                    "backHome4.png",
-                    "backHome5.png"
-                ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "rightMove": {
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 869
+                "x": 972,
+                "y": 693
             }
         },
         "action": {
@@ -213,27 +184,38 @@
             "type": "Swipe"
         },
         "next": [
-            "[Anchor]SpecialNode"
+            "isLogin"
         ],
         "on_error": [
-            "leftMove"
+            "leftMove-start"
         ],
         "post_delay": 2000
     },
-    "start": {
+    "startGame": {
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 494
+                "x": 1016,
+                "y": 359
             }
         },
+        "action": {
+            "type": "Click"
+        },
         "next": [
-            "returnHome"
+            "checkLogin"
         ],
         "on_error": [
-            "[Anchor]SpecialNode",
-            "[JumpBack]rightMove"
+            "isLogin"
         ],
-        "timeout": 2000
+        "post_delay": 5000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "开始游戏"
+                ]
+            },
+            "type": "OCR"
+        },
+        "timeout": 3000
     }
 }

@@ -1,0 +1,290 @@
+{
+    "$__mpe_config_adventure": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filename": "adventure",
+            "prefix": "",
+            "savedViewport": {
+                "x": 389,
+                "y": 305,
+                "zoom": 0.46
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_start_adventure": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 98
+            }
+        }
+    },
+    "N03": {
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 596
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -6,
+                    27,
+                    10,
+                    31
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "battle"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "N03"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "adventure": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 566
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -34,
+                    -125,
+                    71,
+                    92
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "go"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "冒险"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "again": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 352
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "used",
+            "checkBattle"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "再次挑战"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "backHome-adventure": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 264
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "返回"
+                ]
+            },
+            "type": "OCR"
+        },
+        "repeat": 2
+    },
+    "battle": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 610
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "startBattle"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "准备战斗"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "challenge": {
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 610
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "N03"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "挑战"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "checkBattle": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 533
+            }
+        },
+        "next": [
+            "again"
+        ],
+        "pre_wait_freezes": {
+            "rate_limit": 5000,
+            "time": 5000,
+            "timeout": 10000000
+        }
+    },
+    "exit": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 275
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "backHome-adventure"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "退出"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "go": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 610
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "challenge"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "前往"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "startAdventureTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 12
+            }
+        },
+        "anchor": {
+            "SpecialNode": "adventure"
+        },
+        "next": [
+            "start"
+        ],
+        "post_delay": 2000
+    },
+    "startBattle": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 610
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkBattle"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "开始战斗"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "used": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 297
+            }
+        },
+        "next": [
+            "exit"
+        ],
+        "on_error": [
+            "checkBattle"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "今日次数已用尽"
+                ]
+            },
+            "type": "OCR"
+        }
+    }
+}

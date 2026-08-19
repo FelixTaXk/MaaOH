@@ -6,26 +6,35 @@
             "filename": "friend",
             "isDeleted": true,
             "isModifiedExternally": false,
-            "lastSyncTime": 1787131151162,
+            "lastSyncTime": 1787154403987,
             "prefix": "",
             "savedViewport": {
-                "x": 404,
-                "y": 197,
-                "zoom": 0.86
+                "x": 102,
+                "y": 360,
+                "zoom": 0.65
             },
             "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_start_friend": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 98
+            }
         }
     },
     "backHome": {
         "$__mpe_code": {
             "position": {
-                "x": 3852,
-                "y": 127
+                "x": 2892,
+                "y": 336
             }
         },
         "action": {
             "type": "Click"
         },
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "template": [
@@ -38,8 +47,8 @@
     "chat": {
         "$__mpe_code": {
             "position": {
-                "x": 2252,
-                "y": 93
+                "x": 1292,
+                "y": 303
             }
         },
         "action": {
@@ -48,6 +57,7 @@
         "next": [
             "send"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "template": [
@@ -64,8 +74,8 @@
     "claim": {
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 162
+                "x": 652,
+                "y": 381
             }
         },
         "action": {
@@ -75,6 +85,7 @@
             "limit",
             "help"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "expected": [
@@ -87,8 +98,8 @@
     "confirm-friend": {
         "$__mpe_code": {
             "position": {
-                "x": 3532,
-                "y": 136
+                "x": 2572,
+                "y": 345
             }
         },
         "action": {
@@ -97,6 +108,7 @@
         "next": [
             "backHome"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "expected": [
@@ -109,8 +121,8 @@
     "emoji": {
         "$__mpe_code": {
             "position": {
-                "x": 2892,
-                "y": 109
+                "x": 1932,
+                "y": 319
             }
         },
         "action": {
@@ -119,6 +131,7 @@
         "next": [
             "emoji1"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "template": [
@@ -131,8 +144,8 @@
     "emoji1": {
         "$__mpe_code": {
             "position": {
-                "x": 3212,
-                "y": 136
+                "x": 2252,
+                "y": 345
             }
         },
         "action": {
@@ -141,6 +154,7 @@
         "next": [
             "confirm-friend"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "expected": [
@@ -153,8 +167,8 @@
     "friend": {
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 51
+                "x": 12,
+                "y": 278
             }
         },
         "action": {
@@ -187,8 +201,8 @@
     "friendBattery": {
         "$__mpe_code": {
             "position": {
-                "x": 1292,
-                "y": 64
+                "x": 332,
+                "y": 264
             }
         },
         "action": {
@@ -198,6 +212,7 @@
             "claim",
             "limit"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "green_mask": true,
@@ -212,8 +227,8 @@
     "help": {
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 347
+                "x": 972,
+                "y": 605
             }
         },
         "action": {
@@ -222,6 +237,7 @@
         "next": [
             "chat"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "expected": [
@@ -231,50 +247,17 @@
             "type": "OCR"
         }
     },
-    "leftMove": {
-        "$__mpe_code": {
-            "position": {
-                "x": 652,
-                "y": 23
-            }
-        },
-        "action": {
-            "param": {
-                "begin": [
-                    578,
-                    729,
-                    20,
-                    21
-                ],
-                "end": [
-                    [
-                        80,
-                        674,
-                        20,
-                        21
-                    ]
-                ]
-            },
-            "type": "Swipe"
-        },
-        "next": [
-            "friend"
-        ],
-        "on_error": [
-            "rightMove"
-        ],
-        "post_delay": 2000
-    },
     "limit": {
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 93
+                "x": 972,
+                "y": 293
             }
         },
         "next": [
             "chat"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "expected": [
@@ -284,72 +267,11 @@
             "type": "OCR"
         }
     },
-    "returnHome": {
-        "$__mpe_code": {
-            "position": {
-                "x": 652,
-                "y": 329
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "friend"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "backHome.png",
-                    "backHome1.png",
-                    "backHome2.png",
-                    "backHome3.png",
-                    "backHome4.png",
-                    "backHome5.png"
-                ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "rightMove": {
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 70
-            }
-        },
-        "action": {
-            "param": {
-                "begin": [
-                    80,
-                    674,
-                    20,
-                    21
-                ],
-                "end": [
-                    [
-                        578,
-                        729,
-                        20,
-                        21
-                    ]
-                ]
-            },
-            "type": "Swipe"
-        },
-        "next": [
-            "friend"
-        ],
-        "on_error": [
-            "leftMove"
-        ],
-        "post_delay": 2000
-    },
     "send": {
         "$__mpe_code": {
             "position": {
-                "x": 2572,
-                "y": 109
+                "x": 1612,
+                "y": 319
             }
         },
         "action": {
@@ -358,6 +280,7 @@
         "next": [
             "emoji"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "template": [
@@ -367,20 +290,19 @@
             "type": "TemplateMatch"
         }
     },
-    "start": {
+    "startFriendTask": {
         "$__mpe_code": {
             "position": {
                 "x": 12,
-                "y": 102
+                "y": 12
             }
         },
+        "anchor": {
+            "SpecialNode": "friend"
+        },
         "next": [
-            "returnHome"
+            "start"
         ],
-        "on_error": [
-            "friend",
-            "rightMove"
-        ],
-        "timeout": 2000
+        "post_delay": 2000
     }
 }

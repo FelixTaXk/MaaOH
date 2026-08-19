@@ -1,0 +1,176 @@
+{
+    "$__mpe_config_base": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filename": "base",
+            "prefix": "",
+            "savedViewport": {
+                "x": 51,
+                "y": 245,
+                "zoom": 0.86
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_start_base": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 98
+            }
+        }
+    },
+    "backHome-base": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 325
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "返回"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "base": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 264
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -30,
+                    -127,
+                    63,
+                    97
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "claim-base"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "基站"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "claim-base": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 308
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "collect"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "领取"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "close": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 282
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "backHome-base"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "close.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "collect": {
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 308
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "confirm-base"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "收取物资"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "confirm-base": {
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 293
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "close"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "confirm.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "startBaseTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 12
+            }
+        },
+        "anchor": {
+            "SpecialNode": "base"
+        },
+        "next": [
+            "start"
+        ],
+        "post_delay": 2000
+    }
+}

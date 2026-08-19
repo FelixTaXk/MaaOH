@@ -1,0 +1,77 @@
+{
+    "$__mpe_config_gacha": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filename": "gacha",
+            "prefix": "",
+            "savedViewport": {
+                "x": 209,
+                "y": 193,
+                "zoom": 0.99
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_free_gacha": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 367
+            }
+        }
+    },
+    "$__mpe_external_start_gacha": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 98
+            }
+        }
+    },
+    "gacha": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 264
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -34,
+                    -134,
+                    66,
+                    102
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "free"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "抽卡"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "startGachaTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 12
+            }
+        },
+        "anchor": {
+            "SpecialNode": "gacha"
+        },
+        "next": [
+            "start"
+        ],
+        "post_delay": 2000
+    }
+}

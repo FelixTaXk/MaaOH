@@ -1,0 +1,135 @@
+{
+    "$__mpe_config_dimension": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\dimension.json",
+            "filename": "dimension",
+            "isDeleted": true,
+            "lastSyncTime": 1787154963972,
+            "prefix": "",
+            "savedViewport": {
+                "x": 218,
+                "y": 276,
+                "zoom": 1.14
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_start_dimension": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 98
+            }
+        }
+    },
+    "backHome-dimension": {
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 341
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "返回"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "confirm-dimension": {
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 307
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "backHome-dimension"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "blueConfirm.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "dimension": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 264
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -14,
+                    -126,
+                    23,
+                    95
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "exchange"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "临界次元"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "exchange": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 324
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "confirm-dimension"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "兑换"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "startDimensionTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 12
+            }
+        },
+        "anchor": {
+            "SpecialNode": "dimension"
+        },
+        "next": [
+            "start"
+        ],
+        "post_delay": 2000
+    }
+}
