@@ -1,0 +1,104 @@
+{
+    "$__mpe_config_generalNode": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filename": "generalNode",
+            "prefix": "",
+            "savedViewport": {
+                "x": 331,
+                "y": 335,
+                "zoom": 0.86
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "leftMove-general": {
+        "$__mpe_code": {
+            "position": {
+                "x": 454,
+                "y": -161
+            }
+        },
+        "action": {
+            "param": {
+                "begin": [
+                    578,
+                    729,
+                    20,
+                    21
+                ],
+                "end": [
+                    [
+                        80,
+                        674,
+                        20,
+                        21
+                    ]
+                ]
+            },
+            "type": "Swipe"
+        },
+        "post_delay": 2000
+    },
+    "returnHome-general": {
+        "$__mpe_code": {
+            "position": {
+                "x": 149,
+                "y": -172
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "template": [
+                    "backHome.png",
+                    "backHome1.png",
+                    "backHome2.png",
+                    "backHome3.png",
+                    "backHome4.png",
+                    "backHome5.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "rightMove-general": {
+        "$__mpe_code": {
+            "position": {
+                "x": 724,
+                "y": -164
+            }
+        },
+        "action": {
+            "param": {
+                "begin": [
+                    80,
+                    674,
+                    20,
+                    21
+                ],
+                "end": [
+                    [
+                        578,
+                        729,
+                        20,
+                        21
+                    ]
+                ]
+            },
+            "type": "Swipe"
+        },
+        "post_delay": 2000
+    },
+    "start-general": {
+        "$__mpe_code": {
+            "position": {
+                "x": -116,
+                "y": -137
+            }
+        },
+        "timeout": 2000
+    }
+}

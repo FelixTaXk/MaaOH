@@ -1,0 +1,96 @@
+{
+    "$__mpe_config_checkIn": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filename": "checkIn",
+            "prefix": "",
+            "savedViewport": {
+                "x": 459,
+                "y": 225,
+                "zoom": 0.94
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "checkIn": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 12
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "clickCheckIn",
+            "haveCheckIn"
+        ],
+        "post_delay": 300,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "签到"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "clickCheckIn": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 238
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "confirm-checkIn"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "点击签到"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "confirm-checkIn": {
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 255
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "确定"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "haveCheckIn": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 19
+            }
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "已签到"
+                ]
+            },
+            "type": "OCR"
+        }
+    }
+}

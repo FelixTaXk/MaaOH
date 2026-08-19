@@ -1,13 +1,16 @@
 {
-    "$__mpe_config_一键日常": {
+    "$__mpe_config_dailyTask": {
         "$__mpe_code": {
             "coordinateMode": "absolute-v1",
-            "filename": "一键日常",
+            "filePath": "E:\\MaaOH\\dailyTask.json",
+            "filename": "dailyTask",
+            "isModifiedExternally": false,
+            "lastSyncTime": 1787117724457,
             "prefix": "",
             "savedViewport": {
-                "x": -94,
-                "y": 20,
-                "zoom": 0.4
+                "x": 365,
+                "y": -97,
+                "zoom": 0.51
             },
             "version": "v1.7.6"
         }
@@ -15,8 +18,8 @@
     "N07": {
         "$__mpe_code": {
             "position": {
-                "x": 1610,
-                "y": 2489
+                "x": 972,
+                "y": 2073
             }
         },
         "action": {
@@ -45,8 +48,8 @@
     "adventure": {
         "$__mpe_code": {
             "position": {
-                "x": 629,
-                "y": 2474
+                "x": 12,
+                "y": 2027
             }
         },
         "action": {
@@ -77,8 +80,8 @@
     "again": {
         "$__mpe_code": {
             "position": {
-                "x": 2852,
-                "y": 2506
+                "x": 1292,
+                "y": 1831
             }
         },
         "action": {
@@ -97,30 +100,11 @@
             "type": "OCR"
         }
     },
-    "backHome": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3532,
-                "y": 2097
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "template": [
-                    "backHome.png"
-                ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
     "backHome1": {
         "$__mpe_code": {
             "position": {
-                "x": 2252,
-                "y": 1688
+                "x": 1612,
+                "y": 1172
             }
         },
         "action": {
@@ -139,8 +123,8 @@
     "backHome2": {
         "$__mpe_code": {
             "position": {
-                "x": 2252,
-                "y": 1095
+                "x": 2812,
+                "y": 89
             }
         },
         "action": {
@@ -158,8 +142,8 @@
     "backHome3": {
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 733
+                "x": 972,
+                "y": 89
             }
         },
         "action": {
@@ -177,8 +161,8 @@
     "backHome4": {
         "$__mpe_code": {
             "position": {
-                "x": 3730,
-                "y": 2497
+                "x": 2252,
+                "y": 1743
             }
         },
         "action": {
@@ -197,8 +181,8 @@
     "base": {
         "$__mpe_code": {
             "position": {
-                "x": 635,
-                "y": 1051
+                "x": 1212,
+                "y": 12
             }
         },
         "action": {
@@ -226,75 +210,11 @@
             "type": "OCR"
         }
     },
-    "battery": {
-        "$__mpe_code": {
-            "position": {
-                "x": 655,
-                "y": 364
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "enabled": true,
-        "next": [
-            "battery2"
-        ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "电量"
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "battery2": {
-        "$__mpe_code": {
-            "position": {
-                "x": 972,
-                "y": 386
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "battery3"
-        ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "蓄电池"
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "battery3": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1292,
-                "y": 403
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "expected": [
-                    "取出电量"
-                ]
-            },
-            "type": "OCR"
-        }
-    },
     "battle": {
         "$__mpe_code": {
             "position": {
-                "x": 1908,
-                "y": 2499
+                "x": 1292,
+                "y": 2087
             }
         },
         "action": {
@@ -315,8 +235,8 @@
     "challenge": {
         "$__mpe_code": {
             "position": {
-                "x": 1253,
-                "y": 2501
+                "x": 652,
+                "y": 2087
             }
         },
         "action": {
@@ -334,36 +254,11 @@
             "type": "OCR"
         }
     },
-    "chat": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1932,
-                "y": 2064
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "send"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "help.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
     "checkBattle": {
         "$__mpe_code": {
             "position": {
-                "x": 2567,
-                "y": 2503
+                "x": 1932,
+                "y": 2010
             }
         },
         "next": [
@@ -375,49 +270,42 @@
             "timeout": 10000000
         }
     },
-    "checkIn": {
+    "checkLogin": {
         "$__mpe_code": {
             "position": {
-                "x": 656,
-                "y": 32
+                "x": 1292,
+                "y": 693
             }
         },
         "action": {
-            "type": "Click"
+            "param": {
+                "custom_action": "sendLoginMessage"
+            },
+            "type": "Custom"
         },
-        "enabled": false,
-        "next": [
-            "clickCheckIn",
-            "haveCheckIn"
-        ],
-        "post_delay": 300,
         "recognition": {
             "param": {
                 "expected": [
-                    "签到"
+                    "选择登录方式"
                 ]
             },
             "type": "OCR"
         }
     },
-    "claim": {
+    "checkNotice": {
         "$__mpe_code": {
             "position": {
-                "x": 1292,
-                "y": 2106
+                "x": 332,
+                "y": 738
             }
         },
-        "action": {
-            "type": "Click"
-        },
         "next": [
-            "limit",
-            "help"
+            "closeNotice"
         ],
         "recognition": {
             "param": {
                 "expected": [
-                    "一键领取"
+                    "历史公告"
                 ]
             },
             "type": "OCR"
@@ -426,8 +314,8 @@
     "claim1": {
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 1078
+                "x": 1532,
+                "y": 72
             }
         },
         "action": {
@@ -445,33 +333,11 @@
             "type": "OCR"
         }
     },
-    "clickCheckIn": {
-        "$__mpe_code": {
-            "position": {
-                "x": 986,
-                "y": -86
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "confirm"
-        ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "点击签到"
-                ]
-            },
-            "type": "OCR"
-        }
-    },
     "close": {
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 1052
+                "x": 2492,
+                "y": 45
             }
         },
         "action": {
@@ -489,11 +355,34 @@
             "type": "TemplateMatch"
         }
     },
+    "closeNotice": {
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 709
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "startGame"
+        ],
+        "post_delay": 20000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "关闭"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
     "collect": {
         "$__mpe_code": {
             "position": {
-                "x": 1292,
-                "y": 1078
+                "x": 1852,
+                "y": 72
             }
         },
         "action": {
@@ -511,52 +400,11 @@
             "type": "OCR"
         }
     },
-    "confirm": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1312,
-                "y": 60
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "expected": [
-                    "确定"
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "confirm1": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3212,
-                "y": 2106
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "backHome"
-        ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "确定"
-                ]
-            },
-            "type": "OCR"
-        }
-    },
     "confirm2": {
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 1699
+                "x": 1292,
+                "y": 1215
             }
         },
         "action": {
@@ -577,8 +425,8 @@
     "confirm3": {
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 1063
+                "x": 2172,
+                "y": 57
             }
         },
         "action": {
@@ -599,8 +447,8 @@
     "confirm4": {
         "$__mpe_code": {
             "position": {
-                "x": 1292,
-                "y": 699
+                "x": 652,
+                "y": 55
             }
         },
         "action": {
@@ -621,8 +469,8 @@
     "dimension": {
         "$__mpe_code": {
             "position": {
-                "x": 642,
-                "y": 660
+                "x": 12,
+                "y": 12
             }
         },
         "action": {
@@ -653,8 +501,8 @@
     "duel": {
         "$__mpe_code": {
             "position": {
-                "x": 629,
-                "y": 1699
+                "x": 12,
+                "y": 1427
             }
         },
         "action": {
@@ -682,55 +530,11 @@
             "type": "OCR"
         }
     },
-    "emoji": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2572,
-                "y": 2080
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "emoji1"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "emoji.png"
-                ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "emoji1": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2892,
-                "y": 2106
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "confirm1"
-        ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "对不起"
-                ]
-            },
-            "type": "OCR"
-        }
-    },
     "exchange": {
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 716
+                "x": 332,
+                "y": 72
             }
         },
         "action": {
@@ -751,8 +555,8 @@
     "exit": {
         "$__mpe_code": {
             "position": {
-                "x": 3440,
-                "y": 2508
+                "x": 1932,
+                "y": 1754
             }
         },
         "action": {
@@ -773,8 +577,8 @@
     "free": {
         "$__mpe_code": {
             "position": {
-                "x": 1297,
-                "y": 1576
+                "x": 652,
+                "y": 1187
             }
         },
         "next": [
@@ -790,70 +594,11 @@
             "type": "OCR"
         }
     },
-    "friend": {
-        "$__mpe_code": {
-            "position": {
-                "x": 629,
-                "y": 2057
-            }
-        },
-        "action": {
-            "param": {
-                "target_offset": [
-                    -36,
-                    -127,
-                    75,
-                    98
-                ]
-            },
-            "type": "Click"
-        },
-        "enabled": false,
-        "next": [
-            "friendBattery"
-        ],
-        "post_delay": 2000,
-        "recognition": {
-            "param": {
-                "expected": [
-                    "好友"
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "friendBattery": {
-        "$__mpe_code": {
-            "position": {
-                "x": 974,
-                "y": 2051
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "claim"
-        ],
-        "recognition": {
-            "param": {
-                "green_mask": true,
-                "template": [
-                    "friendBattery.png",
-                    "friendBattery2.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
     "gacha": {
         "$__mpe_code": {
             "position": {
-                "x": 965,
-                "y": 1731
+                "x": 332,
+                "y": 1473
             }
         },
         "action": {
@@ -882,8 +627,8 @@
     "gacha1": {
         "$__mpe_code": {
             "position": {
-                "x": 638,
-                "y": 1362
+                "x": 332,
+                "y": 1097
             }
         },
         "action": {
@@ -914,8 +659,8 @@
     "gachaOne": {
         "$__mpe_code": {
             "position": {
-                "x": 1610,
-                "y": 1680
+                "x": 972,
+                "y": 1187
             }
         },
         "action": {
@@ -938,63 +683,34 @@
         "$__mpe_code": {
             "position": {
                 "x": 12,
-                "y": 1124
+                "y": 633
             }
         },
         "action": {
             "type": "Click"
         },
         "next": [
-            "gameStart"
+            "checkNotice"
         ],
-        "post_delay": 3000,
-        "recognition": {
-            "param": {
-                "template": [
-                    "game.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "gameStart": {
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 1145
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "checkIn",
-            "battery",
-            "friend",
-            "duel",
-            "gacha1",
-            "base",
-            "dimension",
-            "adventure"
+        "on_error": [
+            "startGame"
         ],
-        "post_delay": 1000,
+        "post_delay": 15000,
         "recognition": {
             "param": {
                 "expected": [
-                    "开始游戏"
+                    "百分之一"
                 ]
             },
             "type": "OCR"
-        }
+        },
+        "timeout": 5000
     },
     "go": {
         "$__mpe_code": {
             "position": {
-                "x": 971,
-                "y": 2513
+                "x": 332,
+                "y": 2087
             }
         },
         "action": {
@@ -1012,27 +728,11 @@
             "type": "OCR"
         }
     },
-    "haveCheckIn": {
-        "$__mpe_code": {
-            "position": {
-                "x": 980,
-                "y": 192
-            }
-        },
-        "recognition": {
-            "param": {
-                "expected": [
-                    "已签到"
-                ]
-            },
-            "type": "OCR"
-        }
-    },
     "haveGaCha": {
         "$__mpe_code": {
             "position": {
-                "x": 1586,
-                "y": 1501
+                "x": 1292,
+                "y": 961
             }
         },
         "next": [
@@ -1047,74 +747,95 @@
             "type": "OCR"
         }
     },
-    "help": {
+    "isLogin": {
         "$__mpe_code": {
             "position": {
-                "x": 1613,
-                "y": 2237
+                "x": 1932,
+                "y": 483
             }
         },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "chat"
-        ],
         "recognition": {
             "param": {
                 "expected": [
-                    "帮好友充电"
+                    "系统升级"
                 ]
             },
             "type": "OCR"
         }
     },
-    "limit": {
+    "leftMove-start": {
         "$__mpe_code": {
             "position": {
-                "x": 1609,
-                "y": 2001
-            }
-        },
-        "next": [
-            "chat"
-        ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "已达上限"
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "send": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2252,
-                "y": 2080
+                "x": 1612,
+                "y": 410
             }
         },
         "action": {
-            "type": "Click"
-        },
-        "next": [
-            "emoji"
-        ],
-        "recognition": {
             "param": {
-                "template": [
-                    "send.png"
+                "begin": [
+                    578,
+                    729,
+                    20,
+                    21
+                ],
+                "end": [
+                    [
+                        80,
+                        674,
+                        20,
+                        21
+                    ]
                 ]
             },
-            "type": "TemplateMatch"
-        }
+            "type": "Swipe"
+        },
+        "next": [
+            "isLogin"
+        ],
+        "on_error": [
+            "rightMove-start"
+        ],
+        "post_delay": 2000
+    },
+    "rightMove-start": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 328
+            }
+        },
+        "action": {
+            "param": {
+                "begin": [
+                    80,
+                    674,
+                    20,
+                    21
+                ],
+                "end": [
+                    [
+                        578,
+                        729,
+                        20,
+                        21
+                    ]
+                ]
+            },
+            "type": "Swipe"
+        },
+        "next": [
+            "isLogin"
+        ],
+        "on_error": [
+            "leftMove-start"
+        ],
+        "post_delay": 2000
     },
     "startBattle": {
         "$__mpe_code": {
             "position": {
-                "x": 2214,
-                "y": 2501
+                "x": 1612,
+                "y": 2087
             }
         },
         "action": {
@@ -1132,11 +853,39 @@
             "type": "OCR"
         }
     },
+    "startGame": {
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 633
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkLogin"
+        ],
+        "on_error": [
+            "isLogin",
+            "rightMove"
+        ],
+        "post_delay": 5000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "开始游戏"
+                ]
+            },
+            "type": "OCR"
+        },
+        "timeout": 3000
+    },
     "used": {
         "$__mpe_code": {
             "position": {
-                "x": 3155,
-                "y": 2501
+                "x": 1612,
+                "y": 1776
             }
         },
         "next": [

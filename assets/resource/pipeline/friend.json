@@ -1,0 +1,386 @@
+{
+    "$__mpe_config_friend": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\friend.json",
+            "filename": "friend",
+            "isDeleted": true,
+            "isModifiedExternally": false,
+            "lastSyncTime": 1787131151162,
+            "prefix": "",
+            "savedViewport": {
+                "x": 404,
+                "y": 197,
+                "zoom": 0.86
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "backHome": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3852,
+                "y": 127
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "template": [
+                    "backHome.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "chat": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 93
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "send"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "help.png",
+                    "help2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "claim": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 162
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "limit",
+            "help"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "一键领取"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "confirm-friend": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3532,
+                "y": 136
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "backHome"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "确定"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "emoji": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2892,
+                "y": 109
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "emoji1"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "emoji.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "emoji1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3212,
+                "y": 136
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "confirm-friend"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "对不起"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "friend": {
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 51
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -36,
+                    -127,
+                    75,
+                    98
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "friendBattery"
+        ],
+        "on_error": [
+            "friend"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "好友"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "friendBattery": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 64
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "claim",
+            "limit"
+        ],
+        "recognition": {
+            "param": {
+                "green_mask": true,
+                "template": [
+                    "friendBattery.png",
+                    "friendBattery2.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "help": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 347
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "chat"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "帮好友充电"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "leftMove": {
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 23
+            }
+        },
+        "action": {
+            "param": {
+                "begin": [
+                    578,
+                    729,
+                    20,
+                    21
+                ],
+                "end": [
+                    [
+                        80,
+                        674,
+                        20,
+                        21
+                    ]
+                ]
+            },
+            "type": "Swipe"
+        },
+        "next": [
+            "friend"
+        ],
+        "on_error": [
+            "rightMove"
+        ],
+        "post_delay": 2000
+    },
+    "limit": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 93
+            }
+        },
+        "next": [
+            "chat"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "已达上限"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "returnHome": {
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 329
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "friend"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "backHome.png",
+                    "backHome1.png",
+                    "backHome2.png",
+                    "backHome3.png",
+                    "backHome4.png",
+                    "backHome5.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "rightMove": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 70
+            }
+        },
+        "action": {
+            "param": {
+                "begin": [
+                    80,
+                    674,
+                    20,
+                    21
+                ],
+                "end": [
+                    [
+                        578,
+                        729,
+                        20,
+                        21
+                    ]
+                ]
+            },
+            "type": "Swipe"
+        },
+        "next": [
+            "friend"
+        ],
+        "on_error": [
+            "leftMove"
+        ],
+        "post_delay": 2000
+    },
+    "send": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2572,
+                "y": 109
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "emoji"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "send.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "start": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 102
+            }
+        },
+        "next": [
+            "returnHome"
+        ],
+        "on_error": [
+            "friend",
+            "rightMove"
+        ],
+        "timeout": 2000
+    }
+}
