@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD033 MD041 -->
 <div align="center">
 
-<img alt="LOGO" src="./assets/logo.ico" width="256" height="256" />
+<img alt="LOGO" src="./assets/resource/image/logo.png" width="256" height="256" />
 
 # MaaOH
 
@@ -69,7 +69,6 @@
 - [MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)  
   基于 Avalonia UI 构建的 MaaFramework 通用 GUI 解决方案
 
-
 ### 开发者
 
 感谢以下开发者对本项目作出的贡献:
@@ -79,4 +78,5 @@
 ## 加入我们
 
 暂无
+
 - MaaFramework 开发交流 QQ 群: 595990173
