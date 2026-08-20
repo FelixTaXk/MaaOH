@@ -67,7 +67,7 @@
             }
         },
         "anchor": {
-            "SpecialNode": "gacha"
+            "specialNode": "gacha"
         },
         "next": [
             "start"

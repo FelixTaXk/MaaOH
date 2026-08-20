@@ -2,29 +2,41 @@
     "$__mpe_config_adventure": {
         "$__mpe_code": {
             "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\adventure.json",
             "filename": "adventure",
+            "isDeleted": true,
+            "isModifiedExternally": false,
+            "lastSyncTime": 1787225864757,
             "prefix": "",
             "savedViewport": {
-                "x": 389,
-                "y": 305,
-                "zoom": 0.46
+                "x": 296,
+                "y": 124,
+                "zoom": 0.6
             },
             "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_checkAuto_adventure": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 598
+            }
         }
     },
     "$__mpe_external_start_adventure": {
         "$__mpe_code": {
             "position": {
                 "x": 332,
-                "y": 98
+                "y": 97
             }
         }
     },
     "N03": {
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 596
+                "x": 1292,
+                "y": 526
             }
         },
         "action": {
@@ -54,7 +66,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 12,
-                "y": 566
+                "y": 496
             }
         },
         "action": {
@@ -69,7 +81,7 @@
             "type": "Click"
         },
         "next": [
-            "go"
+            "chooseAdventure"
         ],
         "post_delay": 2000,
         "recognition": {
@@ -84,16 +96,18 @@
     "again": {
         "$__mpe_code": {
             "position": {
-                "x": 1292,
-                "y": 352
+                "x": 562,
+                "y": 61
             }
         },
         "action": {
             "type": "Click"
         },
         "next": [
-            "used",
-            "checkBattle"
+            "used"
+        ],
+        "on_error": [
+            "checkBattleResult"
         ],
         "recognition": {
             "param": {
@@ -107,8 +121,8 @@
     "backHome-adventure": {
         "$__mpe_code": {
             "position": {
-                "x": 2252,
-                "y": 264
+                "x": 1522,
+                "y": 12
             }
         },
         "action": {
@@ -127,8 +141,8 @@
     "battle": {
         "$__mpe_code": {
             "position": {
-                "x": 1292,
-                "y": 610
+                "x": 1612,
+                "y": 540
             }
         },
         "action": {
@@ -149,8 +163,8 @@
     "challenge": {
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 610
+                "x": 972,
+                "y": 540
             }
         },
         "action": {
@@ -168,11 +182,11 @@
             "type": "OCR"
         }
     },
-    "checkBattle": {
+    "checkBattleResult": {
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 533
+                "x": 882,
+                "y": 278
             }
         },
         "next": [
@@ -181,14 +195,36 @@
         "pre_wait_freezes": {
             "rate_limit": 5000,
             "time": 5000,
-            "timeout": 10000000
+            "timeout": -1
+        }
+    },
+    "chooseAdventure": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 540
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "go"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "冒险"
+                ]
+            },
+            "type": "OCR"
         }
     },
     "exit": {
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 275
+                "x": 1202,
+                "y": 23
             }
         },
         "action": {
@@ -209,8 +245,8 @@
     "go": {
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 610
+                "x": 652,
+                "y": 540
             }
         },
         "action": {
@@ -236,7 +272,7 @@
             }
         },
         "anchor": {
-            "SpecialNode": "adventure"
+            "specialNode": "adventure"
         },
         "next": [
             "start"
@@ -246,15 +282,18 @@
     "startBattle": {
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 610
+                "x": 1932,
+                "y": 512
             }
         },
         "action": {
             "type": "Click"
         },
+        "anchor": {
+            "backNode": "checkBattleResult"
+        },
         "next": [
-            "checkBattle"
+            "checkAuto"
         ],
         "recognition": {
             "param": {
@@ -268,15 +307,12 @@
     "used": {
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 297
+                "x": 882,
+                "y": 24
             }
         },
         "next": [
             "exit"
-        ],
-        "on_error": [
-            "checkBattle"
         ],
         "recognition": {
             "param": {

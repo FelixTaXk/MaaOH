@@ -1,0 +1,265 @@
+{
+    "$__mpe_config_dailyCommission": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\dailyCommission.json",
+            "filename": "dailyCommission",
+            "isDeleted": true,
+            "lastSyncTime": 1787227947562,
+            "prefix": "",
+            "savedViewport": {
+                "x": -88,
+                "y": -12,
+                "zoom": 0.51
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_mopUp_dailyCommission": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2581,
+                "y": 778
+            }
+        }
+    },
+    "$__mpe_external_start_dailyCommission": {
+        "$__mpe_code": {
+            "position": {
+                "x": 953,
+                "y": 401
+            }
+        }
+    },
+    "backCommissionList": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2590,
+                "y": 1123
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "返回"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "checkTaskNum": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1863,
+                "y": 474
+            }
+        },
+        "action": {
+            "param": {
+                "custom_action": "SetTargetByOcrCount"
+            },
+            "type": "Custom"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "完成上一级挑战解锁"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "commission1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1580,
+                "y": 456
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    33,
+                    580,
+                    200,
+                    305
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "checkTaskNum"
+        ],
+        "post_delay": 1000
+    },
+    "dailyCommission": {
+        "$__mpe_code": {
+            "position": {
+                "x": 662,
+                "y": 619
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -34,
+                    -125,
+                    71,
+                    92
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "event-2"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "冒险"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "enterDailyCommission": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1302,
+                "y": 635
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "commission1"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "每日委托"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "event-2": {
+        "$__mpe_code": {
+            "position": {
+                "x": 982,
+                "y": 635
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "enterDailyCommission"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "活动"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "firstTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2286,
+                "y": 444
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    42,
+                    557,
+                    636,
+                    108
+                ]
+            },
+            "type": "Click"
+        },
+        "anchor": {
+            "taskNode": "secondTask"
+        },
+        "enabled": false,
+        "next": [
+            "mopUp"
+        ],
+        "post_delay": 1000
+    },
+    "secondTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2282,
+                "y": 761
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    41,
+                    687,
+                    638,
+                    109
+                ]
+            },
+            "type": "Click"
+        },
+        "anchor": {
+            "taskNode": "thirdTask"
+        },
+        "enabled": false,
+        "next": [
+            "mopUp"
+        ],
+        "post_delay": 1000
+    },
+    "startDailyCommissionTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 651,
+                "y": 315
+            }
+        },
+        "anchor": {
+            "specialNode": "dailyCommission"
+        },
+        "next": [
+            "start"
+        ],
+        "post_delay": 2000
+    },
+    "thirdTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2279,
+                "y": 1082
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    40,
+                    814,
+                    640,
+                    112
+                ]
+            },
+            "type": "Click"
+        },
+        "enabled": false,
+        "post_delay": 1000
+    }
+}

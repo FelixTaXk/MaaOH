@@ -97,7 +97,7 @@
             }
         },
         "anchor": {
-            "SpecialNode": "duel"
+            "specialNode": "duel"
         },
         "next": [
             "start"

@@ -1,0 +1,453 @@
+{
+    "$__mpe_config_pointsRace": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filename": "pointsRace",
+            "prefix": "",
+            "savedViewport": {
+                "x": -848,
+                "y": 251,
+                "zoom": 0.69
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_checkAuto_pointsRace": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2802,
+                "y": 627
+            }
+        }
+    },
+    "$__mpe_external_start_pointsRace": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 97
+            }
+        }
+    },
+    "backHome-pointRace": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2162,
+                "y": 1402
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "template": [
+                    "backHome1.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "checkRaceResult": {
+        "$__mpe_code": {
+            "position": {
+                "x": 562,
+                "y": 323
+            }
+        },
+        "next": [
+            "win",
+            "lose"
+        ]
+    },
+    "checkLeftTimes": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1522,
+                "y": 578
+            }
+        },
+        "next": [
+            "leftFive",
+            "leftFour",
+            "leftThree",
+            "leftTwo",
+            "leftOne",
+            "leftZero"
+        ]
+    },
+    "enterLevel1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2162,
+                "y": 853
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    35,
+                    517,
+                    243,
+                    113
+                ]
+            },
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "startFight"
+        ]
+    },
+    "enterLevel2": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2162,
+                "y": 541
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    35,
+                    732,
+                    246,
+                    105
+                ]
+            },
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "startFight"
+        ]
+    },
+    "enterLevel3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2162,
+                "y": 229
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    35,
+                    517,
+                    243,
+                    113
+                ]
+            },
+            "type": "Click"
+        },
+        "enabled": true,
+        "next": [
+            "startFight"
+        ]
+    },
+    "enterPointRace": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1202,
+                "y": 585
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkLeftTimes"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "积分赛"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "event": {
+        "$__mpe_code": {
+            "position": {
+                "x": 882,
+                "y": 585
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "enterPointRace"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "活动"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "exitFight": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1202,
+                "y": 263
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkLeftTimes"
+        ],
+        "post_delay": 3000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "退出"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "leftFive": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1842,
+                "y": 12
+            }
+        },
+        "next": [
+            "enterLevel3",
+            "enterLevel2",
+            "enterLevel1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "剩余5次"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "leftFour": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1842,
+                "y": 286
+            }
+        },
+        "next": [
+            "enterLevel3",
+            "enterLevel2",
+            "enterLevel1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "剩余4次"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "leftOne": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1842,
+                "y": 1108
+            }
+        },
+        "next": [
+            "enterLevel3",
+            "enterLevel2",
+            "enterLevel1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "剩余1次"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "leftThree": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1842,
+                "y": 560
+            }
+        },
+        "next": [
+            "enterLevel3",
+            "enterLevel2",
+            "enterLevel1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "剩余3次"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "leftTwo": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1842,
+                "y": 834
+            }
+        },
+        "next": [
+            "enterLevel3",
+            "enterLevel2",
+            "enterLevel1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "剩余2次"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "leftZero": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1842,
+                "y": 1382
+            }
+        },
+        "next": [
+            "backHome-pointRace"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "剩余0次"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "lose": {
+        "$__mpe_code": {
+            "position": {
+                "x": 882,
+                "y": 331
+            }
+        },
+        "next": [
+            "exitFight"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "QUEST LOSE"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "pointRace": {
+        "$__mpe_code": {
+            "position": {
+                "x": 562,
+                "y": 569
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -34,
+                    -125,
+                    71,
+                    92
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "event"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "冒险"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "startFight": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2482,
+                "y": 493
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": {
+            "backNode": "checkRaceResult"
+        },
+        "next": [
+            "checkAuto"
+        ],
+        "post_delay": 1000,
+        "post_wait_freezes": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "开始战斗"
+                ]
+            },
+            "type": "OCR"
+        },
+        "timeout": -1
+    },
+    "startPointRaceTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 12
+            }
+        },
+        "anchor": {
+            "specialNode": "pointRace"
+        },
+        "next": [
+            "start"
+        ],
+        "post_delay": 2000
+    },
+    "win": {
+        "$__mpe_code": {
+            "position": {
+                "x": 882,
+                "y": 77
+            }
+        },
+        "next": [
+            "exitFight"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "QUESTCLEAR!"
+                ]
+            },
+            "type": "OCR"
+        }
+    }
+}

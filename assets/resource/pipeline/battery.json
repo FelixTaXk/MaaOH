@@ -2,21 +2,33 @@
     "$__mpe_config_battery": {
         "$__mpe_code": {
             "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\battery.json",
             "filename": "battery",
+            "isDeleted": true,
+            "isModifiedExternally": false,
+            "lastSyncTime": 1787205877389,
             "prefix": "",
             "savedViewport": {
-                "x": 710,
-                "y": 472,
-                "zoom": 0.94
+                "x": 469,
+                "y": 201,
+                "zoom": 1.09
             },
             "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_start_battery": {
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 97
+            }
         }
     },
     "battery": {
         "$__mpe_code": {
             "position": {
                 "x": 12,
-                "y": 12
+                "y": 262
             }
         },
         "action": {
@@ -38,7 +50,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 332,
-                "y": 12
+                "y": 262
             }
         },
         "action": {
@@ -60,7 +72,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 652,
-                "y": 29
+                "y": 279
             }
         },
         "action": {
@@ -74,5 +86,20 @@
             },
             "type": "OCR"
         }
+    },
+    "startBatteryTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 12
+            }
+        },
+        "anchor": {
+            "specialNode": "battery"
+        },
+        "next": [
+            "start"
+        ],
+        "post_delay": 2000
     }
 }

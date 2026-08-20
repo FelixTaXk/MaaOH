@@ -166,7 +166,7 @@
             }
         },
         "anchor": {
-            "SpecialNode": "base"
+            "specialNode": "base"
         },
         "next": [
             "start"

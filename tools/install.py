@@ -112,14 +112,14 @@ def install_resource():
         working_dir / "assets" / "interface.json",
         install_path,
     )
-    # interface.json 中 icon 字段相对包根，需将图标拷贝到安装输出目录根
+    # interface.json 中 icon 字段相对包根（resource/logo.ico），需将图标拷贝到安装输出目录的 resource 子目录
     if not (working_dir / "assets" / "logo.ico").exists():
         print('Please place "logo.ico" in "assets" first.')
         print('请先将 "logo.ico" 放置到 "assets" 目录。')
         sys.exit(1)
     shutil.copy2(
         working_dir / "assets" / "logo.ico",
-        install_path,
+        install_path / "resource",
     )
 
     with open(install_path / "interface.json", "r", encoding="utf-8") as f:
