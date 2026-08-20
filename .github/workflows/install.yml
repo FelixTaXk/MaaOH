@@ -143,6 +143,40 @@ jobs:
           name: MaaOH-${{ matrix.os }}-${{ matrix.arch }}
           path: "install"
 
+  apply-icon:
+    name: Apply app icon (Windows)
+    needs: [meta, install]
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # rcedit 是 Windows PE 程序，无法在 install job 的 ubuntu runner 上运行，
+      # 故在此新增 windows-latest 后处理 job：下载 Windows 产物 → 换图标 → 重新上传替换
+      # 注意：artifact 名需与 install job 的 win 产物一致（当前 matrix 仅 win-x86_64）
+      - name: Download Windows artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: MaaOH-win-x86_64
+          path: install
+
+      - name: Embed icon into MaaOH.exe
+        shell: bash
+        run: |
+          if [ ! -f install/MaaOH.exe ]; then
+            echo "[ERR] install/MaaOH.exe not found, cannot apply icon."
+            exit 1
+          fi
+          curl -fsSL --retry 3 --retry-delay 5 https://github.com/electron/rcedit/releases/download/v2.0.0/rcedit-x64.exe -o rcedit.exe
+          ./rcedit.exe install/MaaOH.exe --set-icon assets/logo.ico
+          echo "[OK] Applied app icon to MaaOH.exe"
+
+      - name: Re-upload Windows artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MaaOH-win-x86_64
+          path: "install"
+          overwrite: true
+
   changelog:
     name: Generate changelog
     needs: meta
@@ -171,7 +205,7 @@ jobs:
 
   release:
     if: ${{ needs.meta.outputs.is_release == 'true' }}
-    needs: [meta, install, changelog]
+    needs: [meta, install, apply-icon, changelog]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4

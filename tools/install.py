@@ -112,6 +112,15 @@ def install_resource():
         working_dir / "assets" / "interface.json",
         install_path,
     )
+    # interface.json 中 icon 字段相对包根，需将图标拷贝到安装输出目录根
+    if not (working_dir / "assets" / "logo.ico").exists():
+        print('Please place "logo.ico" in "assets" first.')
+        print('请先将 "logo.ico" 放置到 "assets" 目录。')
+        sys.exit(1)
+    shutil.copy2(
+        working_dir / "assets" / "logo.ico",
+        install_path,
+    )
 
     with open(install_path / "interface.json", "r", encoding="utf-8") as f:
         interface = jsonc.load(f)
@@ -141,10 +150,27 @@ def install_agent():
     )
 
 
+def rename_gui_entrypoint():
+    # 仅 Windows 产物有 exe 入口，其他平台跳过
+    if os_name != "win":
+        print(f"Skip renaming GUI entrypoint for non-Windows target: {os_name}")
+        return
+
+    source = install_path / "MFAAvalonia.exe"
+    target = install_path / "MaaOH.exe"
+    if not source.exists():
+        print('"MFAAvalonia.exe" not found in install directory.')
+        print('安装目录中未找到 "MFAAvalonia.exe"，无法重命名为 "MaaOH.exe"。')
+        sys.exit(1)
+    # 使用 replace 而非 rename：目标已存在时原子覆盖，避免 Windows 上抛 FileExistsError
+    source.replace(target)
+
+
 if __name__ == "__main__":
     install_deps()
     install_resource()
     install_chores()
     install_agent()
+    rename_gui_entrypoint()
 
     print(f"Install to {install_path} successfully.")

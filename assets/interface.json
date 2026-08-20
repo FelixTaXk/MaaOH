@@ -5,15 +5,17 @@
     // 示例：https://github.com/MaaXYZ/MaaFramework/blob/main/sample/interface.json
     "interface_version": 2,
     "name": "MaaOH",
+    "label": "MaaOH",
     "description": "百分之一一键日常",
     "contact": "QQ群: 123456789",
     "license": "MIT",
     "welcome": "首次使用！欢迎使用 MaaOH!",
     // 填写项目地址和版本号可实现自动更新功能
     "github": "https://github.com/FelixTaXk/MaaOH",
-    "version": "v0.0.1",
+    "version": "v0.0.3",
+    "icon": "logo.ico",
     // Mirror酱为第三方分发服务，新项目默认关闭
-    // 若有需要请联系 Mirror酱 开通，直接自行开启是无法使用的
+    // 若有需要请联系 Mirror酱 开通，直接自3行开启是无法使用的
     // "mirrorchyan_rid": "MaaXXX",
     // "mirrorchyan_multiplatform": true,
     "controller": [
@@ -52,33 +54,33 @@
             "entry": "battery"
         },
         {
-            "name": "好友",
+            "name": "好友收赠",
             "entry": "startFriendTask",
             "description": "收取好友电量"
         },
         {
-            "name": "抽卡",
-            "entry": "startDuelTask",
-            "description": "每日一次免费抽卡"
-        },
-        {
-            "name": "决斗王抽卡",
+            "name": "每日抽卡",
             "entry": "startGachaTask",
             "description": "每日一次免费抽卡"
         },
         {
-            "name": "基站",
-            "entry": "startFriendTask",
+            "name": "决斗王抽卡",
+            "entry": "startDuelTask",
+            "description": "每日一次免费抽卡"
+        },
+        {
+            "name": "基站收取",
+            "entry": "startBaseTask",
+            "description": "一键领取材料"
+        },
+        {
+            "name": "临界次元兑换",
+            "entry": "startDimensionTask",
             "description": "2000金币兑换"
         },
         {
-            "name": "临界次元",
-            "entry": "startFriendTask",
-            "description": "2000金币兑换"
-        },
-        {
-            "name": "冒险",
-            "entry": "startFriendTask",
+            "name": "自动冒险",
+            "entry": "startAdventureTask",
             "description": "默认最高关卡挑战模式N03（关卡选择请等待后续更新）"
         }
     ],
