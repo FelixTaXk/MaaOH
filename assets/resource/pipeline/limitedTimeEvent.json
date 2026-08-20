@@ -1,0 +1,481 @@
+{
+    "$__mpe_config_limitedTimeEvent": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\limitedTimeEvent.json",
+            "filename": "limitedTimeEvent",
+            "isDeleted": true,
+            "lastSyncTime": 1787250189042,
+            "prefix": "",
+            "savedViewport": {
+                "x": 343,
+                "y": 333,
+                "zoom": 0.37
+            },
+            "version": "v1.8.0"
+        }
+    },
+    "$__mpe_external_checkAuto_limitedTimeEvent": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3312,
+                "y": 565
+            }
+        }
+    },
+    "$__mpe_external_returnHome_limitedTimeEvent": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2032,
+                "y": 580
+            }
+        }
+    },
+    "$__mpe_external_start_limitedTimeEvent": {
+        "$__mpe_code": {
+            "position": {
+                "x": 437,
+                "y": 479
+            }
+        }
+    },
+    "backHomePage": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1072,
+                "y": 835
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "enterLimitedTimeEvent"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "返回"
+                ]
+            },
+            "type": "OCR"
+        },
+        "repeat": 2
+    },
+    "checkEventResult": {
+        "$__mpe_code": {
+            "position": {
+                "x": 112,
+                "y": 749
+            }
+        },
+        "next": [
+            "win-event",
+            "lose-event"
+        ],
+        "timeout": -1
+    },
+    "checkLeftLicense": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1712,
+                "y": 521
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "returnHome"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "x0"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "checkLevel15": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2672,
+                "y": 432
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "startLimitBattle"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "x15"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "checkLevel30": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2672,
+                "y": 778
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "startLimitBattle"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "x20"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "checkLevel45": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2672,
+                "y": 1124
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "startLimitBattle"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "x25"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "checkLevel5": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2672,
+                "y": 86
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "startLimitBattle"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "x10"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "claim": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1712,
+                "y": 779
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "levelChallenge"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "领取"
+                ],
+                "roi": [
+                    129,
+                    715,
+                    203,
+                    65
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "enterLimitedTimeEvent": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1392,
+                "y": 752
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "claim"
+        ],
+        "on_error": [
+            "checkLeftLicense",
+            "levelChallenge"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "限时活动"
+                ]
+            },
+            "type": "OCR"
+        },
+        "timeout": 2000
+    },
+    "event-3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1072,
+                "y": 521
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "enterLimitedTimeEvent"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "活动"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "exitFight-event": {
+        "$__mpe_code": {
+            "position": {
+                "x": 752,
+                "y": 851
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkLevel5",
+            "checkLevel15",
+            "checkLevel30",
+            "checkLevel45"
+        ],
+        "on_error": [
+            "backHomePage"
+        ],
+        "post_delay": 3000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "退出"
+                ]
+            },
+            "type": "OCR"
+        },
+        "timeout": 2000
+    },
+    "levelChallenge": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2032,
+                "y": 720
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkLevel5",
+            "checkLevel15",
+            "checkLevel30",
+            "checkLevel45"
+        ],
+        "on_error": [
+            "pullUp"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "关卡挑战"
+                ]
+            },
+            "type": "OCR"
+        },
+        "timeout": 2000
+    },
+    "limitedTimeEvent": {
+        "$__mpe_code": {
+            "position": {
+                "x": 752,
+                "y": 505
+            }
+        },
+        "action": {
+            "param": {
+                "target_offset": [
+                    -34,
+                    -125,
+                    71,
+                    92
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "event-3"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "冒险"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "lose-event": {
+        "$__mpe_code": {
+            "position": {
+                "x": 432,
+                "y": 984
+            }
+        },
+        "next": [
+            "exitFight-event"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "QUEST LOSE"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "pullUp": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2352,
+                "y": 693
+            }
+        },
+        "action": {
+            "param": {
+                "begin": [
+                    351,
+                    1111,
+                    36,
+                    32
+                ],
+                "end": [
+                    [
+                        343,
+                        732,
+                        20,
+                        25
+                    ]
+                ]
+            },
+            "type": "Swipe"
+        },
+        "next": [
+            "checkLevel5",
+            "checkLevel15",
+            "checkLevel30",
+            "checkLevel45"
+        ]
+    },
+    "startLimitBattle": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2992,
+                "y": 446
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": {
+            "backNode": "checkEventResult"
+        },
+        "next": [
+            "checkAuto"
+        ],
+        "post_wait_freezes": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "开始战斗"
+                ]
+            },
+            "type": "OCR"
+        },
+        "timeout": -1
+    },
+    "startLimitedTimeEventTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 117,
+                "y": 386
+            }
+        },
+        "anchor": {
+            "specialNode": "limitedTimeEvent"
+        },
+        "next": [
+            "start"
+        ],
+        "post_delay": 2000
+    },
+    "win-event": {
+        "$__mpe_code": {
+            "position": {
+                "x": 432,
+                "y": 728
+            }
+        },
+        "next": [
+            "exitFight-event"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "QUESTCLEAR!"
+                ]
+            },
+            "type": "OCR"
+        }
+    }
+}

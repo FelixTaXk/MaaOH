@@ -1,0 +1,253 @@
+{
+    "$__mpe_config_claimReward": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filename": "claimReward",
+            "prefix": "",
+            "savedViewport": {
+                "x": 152,
+                "y": 567,
+                "zoom": 0.25
+            },
+            "version": "v1.8.0"
+        }
+    },
+    "$__mpe_external_returnHome_claimReward": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2992,
+                "y": 423
+            }
+        }
+    },
+    "$__mpe_external_start_claimReward": {
+        "$__mpe_code": {
+            "position": {
+                "x": 432,
+                "y": 148
+            }
+        }
+    },
+    "claimAll": {
+        "$__mpe_code": {
+            "position": {
+                "x": 752,
+                "y": 336
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "claimAll2"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "领取全部"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "claimAll2": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1072,
+                "y": 336
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "confirmClaimAll"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "领取全部"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "claimDailyReward": {
+        "$__mpe_code": {
+            "position": {
+                "x": 432,
+                "y": 336
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "claimAll"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "日常任务"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "claimReward": {
+        "$__mpe_code": {
+            "position": {
+                "x": 112,
+                "y": 336
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "claimDailyReward"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "每日任务"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "claimWeeklyAll": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2032,
+                "y": 336
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "claimWeeklyAll2"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "领取全部"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "claimWeeklyAll2": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2352,
+                "y": 336
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "confirmClaimWeeklyAll"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "领取全部"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "claimWeeklyReward": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1712,
+                "y": 336
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "claimWeeklyAll"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "周常任务"
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "confirmClaimAll": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1392,
+                "y": 321
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "claimWeeklyReward"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "template": [
+                    "confirm.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "confirmClaimWeeklyAll": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2672,
+                "y": 314
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "returnHome"
+        ],
+        "post_delay": 2000,
+        "recognition": {
+            "param": {
+                "template": [
+                    "confirm.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "startClaimRewardTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 112,
+                "y": 62
+            }
+        },
+        "anchor": {
+            "specialNode": "claimReward"
+        },
+        "next": [
+            "start"
+        ],
+        "post_delay": 2000
+    }
+}

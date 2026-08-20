@@ -2,14 +2,18 @@
     "$__mpe_config_pointsRace": {
         "$__mpe_code": {
             "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\pointsRace.json",
             "filename": "pointsRace",
+            "isDeleted": true,
+            "isModifiedExternally": false,
+            "lastSyncTime": 1787249073009,
             "prefix": "",
             "savedViewport": {
-                "x": -848,
-                "y": 251,
-                "zoom": 0.69
+                "x": -1,
+                "y": 142,
+                "zoom": 0.5
             },
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_checkAuto_pointsRace": {
@@ -47,18 +51,6 @@
             "type": "TemplateMatch"
         }
     },
-    "checkRaceResult": {
-        "$__mpe_code": {
-            "position": {
-                "x": 562,
-                "y": 323
-            }
-        },
-        "next": [
-            "win",
-            "lose"
-        ]
-    },
     "checkLeftTimes": {
         "$__mpe_code": {
             "position": {
@@ -74,6 +66,19 @@
             "leftOne",
             "leftZero"
         ]
+    },
+    "checkRaceResult": {
+        "$__mpe_code": {
+            "position": {
+                "x": 562,
+                "y": 323
+            }
+        },
+        "next": [
+            "win",
+            "lose"
+        ],
+        "timeout": -1
     },
     "enterLevel1": {
         "$__mpe_code": {
@@ -139,7 +144,7 @@
             },
             "type": "Click"
         },
-        "enabled": true,
+        "enabled": false,
         "next": [
             "startFight"
         ]

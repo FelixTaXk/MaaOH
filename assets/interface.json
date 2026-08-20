@@ -13,7 +13,7 @@
     "welcome": "首次使用！欢迎使用 MaaOH!",
     // 填写项目地址和版本号可实现自动更新功能
     "github": "https://github.com/FelixTaXk/MaaOH",
-    "version": "v0.0.3",
+    "version": "v0.0.4",
     "icon": "resource/logo.ico",
     // Mirror酱为第三方分发服务，新项目默认关闭
     // 若有需要请联系 Mirror酱 开通，直接自3行开启是无法使用的
@@ -83,7 +83,111 @@
             "name": "自动冒险",
             "entry": "startAdventureTask",
             "description": "默认最高关卡挑战模式N03（关卡选择请等待后续更新）"
+        },
+        {
+            "name": "积分赛",
+            "entry": "startPointRaceTask",
+            "description": "默认最高",
+            "option": [
+                "对手等级"
+            ]
+        },
+        {
+            "name": "每日委托",
+            "entry": "startDailyCommissionTask",
+            "description": "一键扫荡每日委托"
+        },
+        {
+            "name": "限时活动",
+            "entry": "startLimitedTimeEventTask",
+            "description": "领取免费票券，默认打最后一关，需要提前编好队伍",
+            "option": [
+                "活动等级"
+            ]
+        },
+        {
+            "name": "分解卡牌",
+            "entry": "startBreakDownCardTask",
+            "description": "分解一次卡牌"
+        },
+        {
+            "name": "领取奖励",
+            "entry": "startClaimRewardTask",
+            "description": "领取日常周常任务（最后一个执行）"
         }
     ],
-    "option": {}
+    "option": {
+        "对手等级": {
+            "type": "select",
+            "label": "对手等级",
+            "description": "选择需要对战的对手等级",
+            "default_case": "高级",
+            "cases": [
+                {
+                    "name": "初级",
+                    "pipeline_override": {
+                        "enterLevel1": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "中级",
+                    "pipeline_override": {
+                        "enterLevel2": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "高级",
+                    "pipeline_override": {
+                        "enterLevel3": {
+                            "enabled": true
+                        }
+                    }
+                },
+            ]
+        },
+        "活动等级": {
+            "type": "select",
+            "label": "活动等级",
+            "description": "选择需要对战的活动等级",
+            "default_case": "lv45",
+            "cases": [
+                {
+                    "name": "lv5",
+                    "pipeline_override": {
+                        "checkLevel5": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "lv15",
+                    "pipeline_override": {
+                        "checkLevel15": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "lv30",
+                    "pipeline_override": {
+                        "checkLevel30": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "lv45",
+                    "pipeline_override": {
+                        "checkLevel45": {
+                            "enabled": true
+                        }
+                    }
+                }
+            ]
+        }
+    }
 }

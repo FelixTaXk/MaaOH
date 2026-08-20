@@ -71,7 +71,7 @@
             "type": "TemplateMatch"
         }
     },
-    "claim": {
+    "claim-friend": {
         "$__mpe_code": {
             "position": {
                 "x": 652,
@@ -209,7 +209,7 @@
             "type": "Click"
         },
         "next": [
-            "claim",
+            "claim-friend",
             "limit"
         ],
         "post_delay": 1000,

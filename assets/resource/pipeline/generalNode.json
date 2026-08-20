@@ -2,8 +2,8 @@
     "$__mpe_anchor_specialNode_generalNode": {
         "$__mpe_code": {
             "position": {
-                "x": 2172,
-                "y": 369
+                "x": 1852,
+                "y": 379
             }
         }
     },
@@ -14,29 +14,21 @@
             "filename": "generalNode",
             "isDeleted": true,
             "isModifiedExternally": false,
-            "lastSyncTime": 1787226489926,
+            "lastSyncTime": 1787247599327,
             "prefix": "",
             "savedViewport": {
-                "x": 80,
-                "y": 211,
-                "zoom": 0.44
+                "x": -761,
+                "y": 119,
+                "zoom": 1
             },
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_backNode_generalNode": {
         "$__mpe_code": {
             "position": {
                 "x": 1932,
-                "y": 995
-            }
-        }
-    },
-    "$__mpe_external_taskNode_generalNode": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3055,
-                "y": 585
+                "y": 987
             }
         }
     },
@@ -44,7 +36,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 332,
-                "y": 1088
+                "y": 728
             }
         },
         "next": [
@@ -66,8 +58,8 @@
     "backHome-gacha": {
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 223
+                "x": 12,
+                "y": 12
             }
         },
         "action": {
@@ -87,7 +79,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 12,
-                "y": 815
+                "y": 841
             }
         },
         "next": [
@@ -95,41 +87,18 @@
             "unAuto"
         ]
     },
-    "clickTick": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2788,
-                "y": 524
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "[Anchor]taskNode"
-        ],
-        "post_delay": 1000,
-        "recognition": {
-            "param": {
-                "template": [
-                    "confirm.png"
-                ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
     "confirm-gacha": {
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 266
+                "x": 892,
+                "y": 40
             }
         },
         "action": {
             "type": "Click"
         },
         "next": [
-            "backHome-gacha"
+            "returnHome"
         ],
         "recognition": {
             "param": {
@@ -140,34 +109,11 @@
             "type": "OCR"
         }
     },
-    "confirmMopUp": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2530,
-                "y": 519
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "clickTick"
-        ],
-        "post_delay": 1000,
-        "recognition": {
-            "param": {
-                "template": [
-                    "blueConfirm.png"
-                ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
     "free": {
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 238
+                "x": 252,
+                "y": 70
             }
         },
         "next": [
@@ -186,8 +132,8 @@
     "gachaOne": {
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 238
+                "x": 572,
+                "y": 12
             }
         },
         "action": {
@@ -209,12 +155,12 @@
     "haveGaCha": {
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 12
+                "x": 572,
+                "y": 326
             }
         },
         "next": [
-            "backHome-gacha"
+            "returnHome"
         ],
         "recognition": {
             "param": {
@@ -228,8 +174,8 @@
     "leftMove": {
         "$__mpe_code": {
             "position": {
-                "x": 1852,
-                "y": 410
+                "x": 1532,
+                "y": 420
             }
         },
         "action": {
@@ -259,34 +205,11 @@
         ],
         "post_delay": 2000
     },
-    "mopUp": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2248,
-                "y": 517
-            }
-        },
-        "action": {
-            "param": {
-                "target": [
-                    18,
-                    1086,
-                    257,
-                    89
-                ]
-            },
-            "type": "Click"
-        },
-        "next": [
-            "confirmMopUp"
-        ],
-        "post_delay": 1000
-    },
     "returnHome": {
         "$__mpe_code": {
             "position": {
-                "x": 1532,
-                "y": 84
+                "x": 1212,
+                "y": 73
             }
         },
         "action": {
@@ -300,7 +223,8 @@
                     "backHome2.png",
                     "backHome3.png",
                     "backHome4.png",
-                    "backHome5.png"
+                    "backHome5.png",
+                    "close.png"
                 ]
             },
             "type": "TemplateMatch"
@@ -309,8 +233,8 @@
     "rightMove": {
         "$__mpe_code": {
             "position": {
-                "x": 1532,
-                "y": 386
+                "x": 1212,
+                "y": 372
             }
         },
         "action": {
@@ -344,7 +268,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 652,
-                "y": 873
+                "y": 900
             }
         },
         "action": {
@@ -367,7 +291,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 972,
-                "y": 872
+                "y": 900
             }
         },
         "action": {
@@ -390,7 +314,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 1292,
-                "y": 902
+                "y": 929
             }
         },
         "next": [
@@ -408,8 +332,8 @@
     "start": {
         "$__mpe_code": {
             "position": {
-                "x": 1212,
-                "y": 12
+                "x": 892,
+                "y": 239
             }
         },
         "next": [
@@ -425,7 +349,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 332,
-                "y": 715
+                "y": 1130
             }
         },
         "action": {
@@ -450,7 +374,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 1612,
-                "y": 910
+                "y": 901
             }
         },
         "next": [
