@@ -17,16 +17,16 @@
   <img alt="platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blueviolet">
   <img alt="license" src="https://img.shields.io/github/license/MAA1999/M9A">
   <br>
-  <img alt="commit" src="https://img.shields.io/github/commit-activity/m/MAA1999/M9A">
-  <img alt="stars" src="https://img.shields.io/github/stars/MAA1999/M9A?style=social">
-  <img alt="downloads" src="https://img.shields.io/github/downloads/MAA1999/M9A/total?style=social">
-  <a href="https://mirrorchyan.com/zh/projects?rid=M9A&source=m9agh-badge" target="_blank"><img alt="mirrorc" src="https://img.shields.io/badge/Mirror%E9%85%B1-%239af3f6?logo=countingworkspro&logoColor=4f46e5"></a>
-  <a href="https://deepwiki.com/MAA1999/M9A"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
+  <img alt="commit" src="https://img.shields.io/github/commit-activity/m/FelixTaXk/MaaOH">
+  <img alt="stars" src="https://img.shields.io/github/stars/FelixTaXk/MaaOH?style=social">
+  <img alt="downloads" src="https://img.shields.io/github/downloads/FelixTaXk/MaaOH/total?style=social">
+  <!-- <a href="https://mirrorchyan.com/zh/projects?rid=M9A&source=m9agh-badge" target="_blank"><img alt="mirrorc" src="https://img.shields.io/badge/Mirror%E9%85%B1-%239af3f6?logo=countingworkspro&logoColor=4f46e5"></a> -->
+  <a href="https://deepwiki.com/FelixTaXk/MaaOH"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
 </p>
 
 <div align="center">
 
-[English](./README.en.md) | [简体中文](./README.md)
+[简体中文](./README.md)
 
 </div>
 
@@ -41,19 +41,15 @@
 - 基站收取
 - 临界次元兑换
 - 自动冒险
+- 积分赛
+- 每日委托
+- 忘却遗迹
+- 限时活动
 - 领取奖励
-- 使用兑换码
-- 切换账号
-
 
 ## 使用说明
 
-- [新手上路]() - **使用前必看**，快速配置和启动
-- [功能介绍]() - 详细的功能说明和使用技巧
-- [连接设置]() - 模拟器、PC端连接配置
-- [常见问题]() - 遇到问题先看这里
-- [MaaPiCli使用说明]() - 命令行版使用指南
-- [Mirror酱使用说明]() - 高速下载和自动更新
+暂无
 
 ## 开发相关
 
@@ -82,6 +78,5 @@
 
 ## 加入我们
 
-- M9A 交流群 QQ 群：175638678
-- M9A 开发群 QQ 群：649344857
+暂无
 - MaaFramework 开发交流 QQ 群: 595990173
