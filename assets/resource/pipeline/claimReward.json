@@ -2,12 +2,16 @@
     "$__mpe_config_claimReward": {
         "$__mpe_code": {
             "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\claimReward.json",
             "filename": "claimReward",
+            "isDeleted": true,
+            "isModifiedExternally": false,
+            "lastSyncTime": 1787338454392,
             "prefix": "",
             "savedViewport": {
-                "x": 152,
-                "y": 567,
-                "zoom": 0.25
+                "x": -882,
+                "y": -20,
+                "zoom": 1
             },
             "version": "v1.8.0"
         }
@@ -64,6 +68,9 @@
         "next": [
             "confirmClaimAll"
         ],
+        "on_error": [
+            "claimWeeklyReward"
+        ],
         "post_delay": 2000,
         "recognition": {
             "param": {
@@ -72,7 +79,8 @@
                 ]
             },
             "type": "OCR"
-        }
+        },
+        "timeout": 2000
     },
     "claimDailyReward": {
         "$__mpe_code": {
@@ -156,6 +164,9 @@
         "next": [
             "confirmClaimWeeklyAll"
         ],
+        "on_error": [
+            "returnHome"
+        ],
         "post_delay": 2000,
         "recognition": {
             "param": {
@@ -164,7 +175,8 @@
                 ]
             },
             "type": "OCR"
-        }
+        },
+        "timeout": 2000
     },
     "claimWeeklyReward": {
         "$__mpe_code": {
