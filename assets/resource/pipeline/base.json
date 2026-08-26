@@ -2,14 +2,18 @@
     "$__mpe_config_base": {
         "$__mpe_code": {
             "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\base.json",
             "filename": "base",
+            "isDeleted": true,
+            "isModifiedExternally": false,
+            "lastSyncTime": 1787763085097,
             "prefix": "",
             "savedViewport": {
-                "x": 51,
-                "y": 245,
-                "zoom": 0.86
+                "x": -828,
+                "y": 22,
+                "zoom": 0.99
             },
-            "version": "v1.7.6"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_start_base": {
@@ -30,6 +34,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "expected": [
@@ -60,7 +65,7 @@
         "next": [
             "claim-base"
         ],
-        "post_delay": 2000,
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "expected": [
@@ -83,6 +88,7 @@
         "next": [
             "collect"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "expected": [
@@ -127,6 +133,7 @@
         "next": [
             "confirm-base"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "expected": [
@@ -149,6 +156,7 @@
         "next": [
             "close"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "template": [
