@@ -14,14 +14,14 @@
             "filename": "generalNode",
             "isDeleted": true,
             "isModifiedExternally": false,
-            "lastSyncTime": 1787850570542,
+            "lastSyncTime": 1787850723131,
             "prefix": "",
             "savedViewport": {
-                "x": -522,
-                "y": 124,
-                "zoom": 0.76
+                "x": -532,
+                "y": 126,
+                "zoom": 0.87
             },
-            "version": "v1.9.0"
+            "version": "v1.9.1"
         }
     },
     "$__mpe_external_backNode_generalNode": {
@@ -73,7 +73,8 @@
             },
             "type": "OCR"
         },
-        "repeat": 2
+        "repeat": 2,
+        "repeat_delay": 1000
     },
     "checkAuto": {
         "$__mpe_code": {
@@ -216,9 +217,6 @@
         "action": {
             "type": "Click"
         },
-        "next": [
-            "[Anchor]specialNode"
-        ],
         "recognition": {
             "param": {
                 "template": [
