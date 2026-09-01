@@ -2,14 +2,18 @@
     "$__mpe_config_breakDownCard": {
         "$__mpe_code": {
             "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\breakDownCard.json",
             "filename": "breakDownCard",
+            "isDeleted": true,
+            "isModifiedExternally": false,
+            "lastSyncTime": 1788281551412,
             "prefix": "",
             "savedViewport": {
-                "x": 235,
-                "y": 303,
-                "zoom": 0.65
+                "x": -401,
+                "y": 235,
+                "zoom": 0.86
             },
-            "version": "v1.8.0"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_start_breakDownCard": {

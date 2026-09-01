@@ -5,14 +5,15 @@
             "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\limitedTimeEvent.json",
             "filename": "limitedTimeEvent",
             "isDeleted": true,
-            "lastSyncTime": 1787250189042,
+            "isModifiedExternally": false,
+            "lastSyncTime": 1788281712243,
             "prefix": "",
             "savedViewport": {
-                "x": 343,
-                "y": 333,
-                "zoom": 0.37
+                "x": -896,
+                "y": -160,
+                "zoom": 0.86
             },
-            "version": "v1.8.0"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_checkAuto_limitedTimeEvent": {

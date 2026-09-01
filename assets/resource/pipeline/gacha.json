@@ -2,14 +2,18 @@
     "$__mpe_config_gacha": {
         "$__mpe_code": {
             "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\gacha.json",
             "filename": "gacha",
+            "isDeleted": true,
+            "isModifiedExternally": false,
+            "lastSyncTime": 1788281682655,
             "prefix": "",
             "savedViewport": {
-                "x": 209,
-                "y": 193,
-                "zoom": 0.99
+                "x": 429,
+                "y": 242,
+                "zoom": 0.86
             },
-            "version": "v1.7.6"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_free_gacha": {

@@ -5,14 +5,15 @@
             "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\dimension.json",
             "filename": "dimension",
             "isDeleted": true,
-            "lastSyncTime": 1787154963972,
+            "isModifiedExternally": false,
+            "lastSyncTime": 1788281657247,
             "prefix": "",
             "savedViewport": {
-                "x": 218,
-                "y": 276,
-                "zoom": 1.14
+                "x": 149,
+                "y": 242,
+                "zoom": 0.86
             },
-            "version": "v1.7.6"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_start_dimension": {

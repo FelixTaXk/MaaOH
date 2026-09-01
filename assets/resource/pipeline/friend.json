@@ -6,14 +6,14 @@
             "filename": "friend",
             "isDeleted": true,
             "isModifiedExternally": false,
-            "lastSyncTime": 1787154403987,
+            "lastSyncTime": 1788281667940,
             "prefix": "",
             "savedViewport": {
-                "x": 102,
-                "y": 360,
-                "zoom": 0.65
+                "x": -677,
+                "y": 109,
+                "zoom": 0.86
             },
-            "version": "v1.7.6"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_start_friend": {

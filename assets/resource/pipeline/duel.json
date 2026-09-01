@@ -2,14 +2,18 @@
     "$__mpe_config_duel": {
         "$__mpe_code": {
             "coordinateMode": "absolute-v1",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\duel.json",
             "filename": "duel",
+            "isDeleted": true,
+            "isModifiedExternally": false,
+            "lastSyncTime": 1788281643926,
             "prefix": "",
             "savedViewport": {
-                "x": 120,
-                "y": -1034,
-                "zoom": 0.99
+                "x": 193,
+                "y": -814,
+                "zoom": 0.86
             },
-            "version": "v1.7.6"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_free_duel": {

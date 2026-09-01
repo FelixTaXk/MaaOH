@@ -2,18 +2,18 @@
     "$__mpe_config_gameStart": {
         "$__mpe_code": {
             "coordinateMode": "absolute-v1",
-            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\dailyTask.json",
+            "filePath": "E:\\MaaOH\\assets\\resource\\pipeline\\gameStart.json",
             "filename": "gameStart",
             "isDeleted": true,
             "isModifiedExternally": false,
-            "lastSyncTime": 1787154384320,
+            "lastSyncTime": 1788281691927,
             "prefix": "",
             "savedViewport": {
-                "x": 200,
-                "y": 29,
-                "zoom": 0.75
+                "x": 12,
+                "y": -89,
+                "zoom": 0.86
             },
-            "version": "v1.7.6"
+            "version": "v1.9.2"
         }
     },
     "checkLogin": {
