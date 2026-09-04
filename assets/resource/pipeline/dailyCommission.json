@@ -6,21 +6,21 @@
             "filename": "dailyCommission",
             "isDeleted": true,
             "isModifiedExternally": false,
-            "lastSyncTime": 1788281619366,
+            "lastSyncTime": 1788540351391,
             "prefix": "",
             "savedViewport": {
-                "x": -814,
-                "y": -102,
-                "zoom": 0.86
+                "x": -1075,
+                "y": 35,
+                "zoom": 0.65
             },
-            "version": "v1.9.2"
+            "version": "v1.9.3"
         }
     },
     "$__mpe_external_returnHome_dailyCommission": {
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 873
+                "x": 2482,
+                "y": 199
             }
         }
     },
@@ -35,8 +35,8 @@
     "backCommissionList": {
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 659
+                "x": 1202,
+                "y": 595
             }
         },
         "action": {
@@ -57,8 +57,8 @@
     "checkCommission1": {
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 545
+                "x": 1522,
+                "y": 536
             }
         },
         "next": [
@@ -87,8 +87,8 @@
     "checkCommission2": {
         "$__mpe_code": {
             "position": {
-                "x": 1292,
-                "y": 545
+                "x": 1842,
+                "y": 536
             }
         },
         "next": [
@@ -117,8 +117,8 @@
     "checkCommission3": {
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 754
+                "x": 2162,
+                "y": 81
             }
         },
         "next": [
@@ -144,8 +144,8 @@
     "commission1": {
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 1073
+                "x": 2162,
+                "y": 1187
             }
         },
         "action": {
@@ -170,8 +170,8 @@
     "commission2": {
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 289
+                "x": 1202,
+                "y": 1237
             }
         },
         "action": {
@@ -197,8 +197,8 @@
     "commission3": {
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 384
+                "x": 2162,
+                "y": 817
             }
         },
         "action": {
@@ -224,8 +224,8 @@
     "dailyCommission": {
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 1018
+                "x": 562,
+                "y": 896
             }
         },
         "action": {
@@ -255,8 +255,8 @@
     "enterDailyCommission": {
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 999
+                "x": 1202,
+                "y": 853
             }
         },
         "action": {
@@ -282,8 +282,8 @@
     "event-2": {
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 1034
+                "x": 882,
+                "y": 912
             }
         },
         "action": {
@@ -305,17 +305,17 @@
     "firstTask": {
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 492
+                "x": 2482,
+                "y": 1046
             }
         },
         "action": {
             "param": {
                 "target": [
-                    42,
-                    557,
-                    636,
-                    108
+                    152,
+                    559,
+                    411,
+                    105
                 ]
             },
             "type": "Click"
@@ -328,8 +328,8 @@
     "firstTaskFinished": {
         "$__mpe_code": {
             "position": {
-                "x": 3212,
-                "y": 807
+                "x": 2482,
+                "y": 646
             }
         },
         "next": [
@@ -358,8 +358,8 @@
     "mopUp": {
         "$__mpe_code": {
             "position": {
-                "x": 2252,
-                "y": 873
+                "x": 3122,
+                "y": 12
             }
         },
         "action": {
@@ -381,8 +381,8 @@
     "mopUp-check": {
         "$__mpe_code": {
             "position": {
-                "x": 2892,
-                "y": 858
+                "x": 2162,
+                "y": 457
             }
         },
         "action": {
@@ -404,8 +404,8 @@
     "mopUp-confirm": {
         "$__mpe_code": {
             "position": {
-                "x": 2572,
-                "y": 873
+                "x": 1842,
+                "y": 70
             }
         },
         "action": {
@@ -427,17 +427,17 @@
     "secondTask": {
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 1001
+                "x": 2802,
+                "y": 689
             }
         },
         "action": {
             "param": {
                 "target": [
-                    41,
-                    687,
-                    638,
-                    109
+                    157,
+                    686,
+                    380,
+                    112
                 ]
             },
             "type": "Click"
@@ -450,8 +450,8 @@
     "secondTaskFinished": {
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 588
+                "x": 562,
+                "y": 444
             }
         },
         "next": [
@@ -495,17 +495,17 @@
     "thirdTask": {
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 945
+                "x": 1522,
+                "y": 281
             }
         },
         "action": {
             "param": {
                 "target": [
-                    40,
-                    814,
-                    640,
-                    112
+                    153,
+                    821,
+                    376,
+                    102
                 ]
             },
             "type": "Click"
@@ -518,8 +518,8 @@
     "thirdTaskFinished": {
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 600
+                "x": 882,
+                "y": 536
             }
         },
         "next": [
